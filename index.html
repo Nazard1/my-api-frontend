@@ -7,8 +7,18 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="logo">Клювання</a>
+                <nav class="nav">
+                    <a href="index.html">Каталог</a>
+                    <a href="add-product.html">Додати товар</a>
+                    <span id="nav-user" class="nav-user"></span>
+                </nav>
+            </div>
+        </header>
         <main class="container">
-            <h1>Клювання — каталог товарів</h1>
+            <h1>Каталог товарів</h1>
             <p id="status" class="status">Завантаження…</p>
             <table id="products" class="products" hidden>
                 <thead>
@@ -27,6 +37,7 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
                 integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
                 crossorigin="anonymous"></script>
+        <script src="auth.js"></script>
         <script src="app.js"></script>
     </body>
 </html>

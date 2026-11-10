@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Клювання — додати товар</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="logo">Клювання</a>
+                <nav class="nav">
+                    <a href="index.html">Каталог</a>
+                    <a href="add-product.html">Додати товар</a>
+                    <span id="nav-user" class="nav-user"></span>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <h1>Додати товар</h1>
+            <form id="product-form" class="form" novalidate>
+                <label for="name">Назва *</label>
+                <input id="name" name="name" type="text">
+                <label for="description">Опис</label>
+                <textarea id="description" name="description" rows="3"></textarea>
+                <label for="price">Ціна, грн *</label>
+                <input id="price" name="price" type="number" step="0.01" min="0.01">
+                <label for="stock">Залишок</label>
+                <input id="stock" name="stock" type="number" step="1" min="0" value="0">
+                <label for="category">Категорія *</label>
+                <select id="category" name="category">
+                    <option value="">— оберіть категорію —</option>
+                </select>
+                <label for="brand">Бренд *</label>
+                <select id="brand" name="brand">
+                    <option value="">— оберіть бренд —</option>
+                </select>
+                <p class="form-error" hidden></p>
+                <button type="submit" class="button">Додати товар</button>
+            </form>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+                crossorigin="anonymous"></script>
+        <script src="auth.js"></script>
+        <script src="add-product.js"></script>
+    </body>
+</html>
